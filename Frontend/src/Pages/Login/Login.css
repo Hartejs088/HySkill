@@ -1,0 +1,130 @@
+.login-container {
+  min-height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffffff;
+  overflow: hidden;
+  position: relative;
+  flex-direction: column;
+}
+
+.login-box {
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(10px);
+  border-radius: 16px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+  padding: 60px 40px;
+  text-align: center;
+  max-width: 420px;
+  width: 90%;
+  z-index: 2;
+  border: 2px solid #3bb4a1;
+  animation: fadeIn 1.5s ease;
+}
+
+.login-title {
+  font-family: "Oswald", sans-serif;
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #222;
+  margin-bottom: 10px;
+}
+
+.login-title span {
+  color: #3bb4a1;
+}
+
+.login-subtitle {
+  font-family: "Montserrat", sans-serif;
+  color: #666;
+  font-size: 1rem;
+  margin-bottom: 25px;
+}
+
+.google-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #3bb4a1;
+  color: white;
+  border: none;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 1rem;
+  padding: 12px 28px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.4s ease;
+  box-shadow: 0 4px 12px rgba(59, 180, 161, 0.3);
+}
+
+.google-btn.hovered {
+  background-color: #ffffff;
+  color: #3bb4a1;
+  border: 2px solid #3bb4a1;
+  transform: translateY(-3px);
+}
+
+.login-img {
+  position: absolute;
+  width: 300px;
+  opacity: 0.8;
+  transition: transform 1.5s ease;
+  z-index: 1;
+}
+
+.login-img.left {
+  top: 50px;
+  left: 40px;
+  animation: floatLeft 6s ease-in-out infinite;
+}
+
+.login-img.right {
+  bottom: 50px;
+  right: 40px;
+  animation: floatRight 6s ease-in-out infinite;
+}
+
+@keyframes floatLeft {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-15px);
+  }
+}
+
+@keyframes floatRight {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(15px);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 768px) {
+  .login-img {
+    width: 180px;
+    opacity: 0.6;
+  }
+
+  .login-title {
+    font-size: 2rem;
+  }
+
+  .login-box {
+    padding: 40px 25px;
+  }
+}

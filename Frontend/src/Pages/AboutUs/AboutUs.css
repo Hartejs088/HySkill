@@ -1,0 +1,62 @@
+/* AboutUs.css */
+
+/* Container adjustments for small screens */
+section {
+  box-sizing: border-box;
+}
+
+/* Images */
+section img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+/* Hover effect for image */
+section img:hover {
+  transform: scale(1.05);
+}
+
+/* Text styling */
+h2 {
+  margin: 0 0 20px 0;
+}
+
+p {
+  margin-bottom: 20px;
+}
+
+/* Responsive layout for tablets and mobiles */
+@media screen and (max-width: 1024px) {
+  section {
+    flex-direction: column;
+    padding: 60px 5%;
+    gap: 30px;
+  }
+  
+  div {
+    text-align: center;
+  }
+  
+  h2 {
+    font-size: 2.5rem;
+  }
+}
+
+/* Mobile optimization */
+@media screen and (max-width: 600px) {
+  section {
+    padding: 40px 5%;
+    gap: 20px;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+
+  p {
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+}

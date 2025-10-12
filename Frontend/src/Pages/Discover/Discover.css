@@ -1,0 +1,107 @@
+.discover-page {
+  background: #ffffff;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  padding: 2rem 1rem;
+}
+
+.discover-container {
+  display: flex;
+  gap: 2rem;
+  width: 100%;
+  max-width: 1300px;
+}
+
+/* Sidebar */
+.discover-sidebar {
+  flex: 0 0 200px;
+  background: #cccdd080;
+  padding: 1.5rem;
+  border-radius: 16px;
+  height: fit-content;
+  position: sticky;
+  top: 100px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.107);
+}
+
+.sidebar-link {
+  color: #028477 !important;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  margin-bottom: 10px;
+  transition: all 0.2s ease;
+}
+
+.sidebar-link:hover {
+  color: #025f56 !important;
+  text-decoration: underline;
+}
+
+/* Content */
+.discover-content {
+  flex: 1;
+  background: #ffffff;
+  padding: 1rem 2rem;
+  border-radius: 12px;
+}
+
+.subheading {
+  color: #333;
+  font-family: "Oswald", sans-serif;
+  margin: 1rem 0;
+}
+
+.no-data {
+  color: #888;
+  font-size: 0.95rem;
+  padding: 0.5rem 0;
+}
+
+/* Profile Cards Grid */
+.profile-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.loading-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
+}
+
+/* Responsive Design */
+@media (max-width: 992px) {
+  .discover-container {
+    flex-direction: column;
+  }
+
+  .discover-sidebar {
+    position: static;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 1rem;
+  }
+
+  .sidebar-link {
+    font-size: 0.9rem;
+  }
+
+  .discover-content {
+    padding: 1rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .profile-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .sidebar-link {
+    font-size: 0.8rem;
+  }
+}

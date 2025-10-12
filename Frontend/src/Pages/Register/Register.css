@@ -1,0 +1,71 @@
+/* Register Page Light Theme */
+
+.register_page {
+  min-height: 80vh;
+  padding-top: 100px;
+  background-color: #f9f9f9; /* light grey background */
+  font-family: Montserrat, sans-serif;
+  color: #222; /* dark text */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.register_section {
+  background-color: #ffffff; /* white card background */
+  color: #222; /* dark text */
+  min-height: 80vh;
+  width: 50%;
+  border: 1px solid #ccc; /* soft border */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* subtle shadow */
+}
+
+.previewForm {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  justify-content: space-between;
+}
+
+/* Preview Container */
+.previewContainer {
+  font-family: "Montserrat", sans-serif;
+  color: #222;
+  margin-bottom: 20px;
+}
+
+.previewItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.previewLabel {
+  flex: 1;
+  font-weight: bold;
+  color: #3bb4a1; /* teal accent */
+}
+
+.previewValue {
+  flex: 2;
+  margin-left: 20px;
+  color: #555; /* slightly lighter text for values */
+}
+
+/* Responsive for Medium Screens */
+@media (max-width: 768px) {
+  .register_section {
+    width: 95%;
+  }
+
+  .link {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-left: 0 !important;
+  }
+}

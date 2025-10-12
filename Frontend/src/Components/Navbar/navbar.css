@@ -1,0 +1,50 @@
+.custom-navbar {
+  transition: all 0.4s ease;
+  background-color: transparent !important;
+  backdrop-filter: none;
+  box-shadow: none;
+  padding: 0.8rem 2rem;
+}
+
+.custom-navbar.scrolled {
+  background-color: rgba(255, 255, 255, 0.85) !important;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.05);
+}
+
+.navbar-brand-custom {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-family: "Oswald", sans-serif;
+  font-weight: 900;
+  font-size: 2rem;
+  color: #003CFF !important;
+  letter-spacing: 1px;
+  text-decoration: none;
+}
+
+.brand-logo {
+  width: 45px;
+  height: 45px;
+  object-fit: contain;
+  border-radius: 8px;
+}
+
+.navlink {
+  color: #000000cc !important;
+  font-family: "Montserrat", sans-serif;
+  margin-right: 1rem;
+  transition: color 0.3s ease, transform 0.2s ease;
+}
+
+.navlink:hover {
+  color: #003CFF !important;
+  transform: scale(1.05);
+}
+
+.offcanvas-title {
+  font-family: "Oswald", sans-serif;
+  color: #028477;
+  font-size: 1.5rem;
+}

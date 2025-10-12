@@ -1,0 +1,69 @@
+.notfound-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  text-align: center;
+  background-color: #ffffff;
+  padding: 20px;
+}
+
+.notfound-image {
+  width: 320px;
+  max-width: 80%;
+  margin-bottom: 20px;
+  animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.notfound-title {
+  font-family: "Oswald", sans-serif;
+  font-size: 2.5rem;
+  color: #333333;
+  margin-bottom: 10px;
+}
+
+.notfound-text {
+  font-family: "Montserrat", sans-serif;
+  color: #555555;
+  max-width: 600px;
+  margin-bottom: 30px;
+  line-height: 1.6;
+}
+
+.notfound-button {
+  background-color: #3bb4a1;
+  color: white;
+  text-decoration: none;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: bold;
+  padding: 12px 28px;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.notfound-button:hover {
+  background-color: #2f8c7d;
+  transform: translateY(-2px);
+}
+
+.notfound-footer {
+  margin-top: 25px;
+  color: #777777;
+  font-size: 0.9rem;
+  font-family: "Montserrat", sans-serif;
+}
+
+.notfound-footer span {
+  color: #3bb4a1;
+  font-weight: bold;
+}

@@ -1,0 +1,133 @@
+/* Container */
+.courses-page {
+  display: flex;
+  
+  justify-content: center;
+  padding: 2rem;
+  background-color: #f8f9fa;
+  min-height: 100vh;
+}
+
+.courses-container {
+  display: flex;
+  max-width: 1300px;
+  width: 100%;
+   padding-top: 60px;
+}
+
+/* Sidebar */
+.courses-sidebar {
+  flex: 0 0 220px;
+  margin-right: 2rem;
+  background-color: #ffffff;
+  padding: 1rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+  position: sticky;
+  top: 2rem;
+  height: fit-content;
+}
+
+.sidebar-link {
+  color: #028477;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+  display: block;
+  transition: background 0.2s, color 0.2s;
+}
+
+.sidebar-link:hover {
+  color: #ffffff;
+  background-color: #028477;
+  border-radius: 6px;
+  padding-left: 0.5rem;
+}
+
+/* Main Content */
+.courses-content {
+  flex: 1;
+}
+
+.loading-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
+}
+
+.subheading {
+  font-size: 1.5rem;
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
+  font-weight: 600;
+  color: #026d61;
+}
+
+/* Course Grid */
+.course-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+/* Course Card */
+.course-card {
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  overflow: hidden;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.course-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+}
+
+.course-image {
+  width: 100%;
+  height: 140px;
+  object-fit: cover;
+}
+
+.course-info {
+  padding: 1rem;
+}
+
+.course-title {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #028477;
+  margin-bottom: 0.5rem;
+}
+
+.course-instructor,
+.course-rating,
+.course-category,
+.course-description {
+  font-size: 0.9rem;
+  margin-bottom: 0.3rem;
+  color: #555555;
+}
+
+.no-data {
+  color: #777;
+  font-style: italic;
+  text-align: center;
+  margin: 2rem 0;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+  .courses-container {
+    flex-direction: column;
+  }
+
+  .courses-sidebar {
+    flex: 1;
+    margin-bottom: 2rem;
+    position: relative;
+    top: 0;
+  }
+}

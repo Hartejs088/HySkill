@@ -1,0 +1,159 @@
+.landing-container {
+  width: 100%;
+  overflow-x: hidden;
+  background: #ffffff;
+  color: #222;
+  font-family: "Montserrat", sans-serif;
+}
+
+/* --- Hero Section --- */
+.hero-section {
+  position: relative;
+  height: 100vh;
+  background: linear-gradient(135deg, #ffffff 0%, #f2f8ff 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  overflow: hidden;
+}
+
+.hero-img {
+  position: absolute;
+  top: 50%;
+  width: 380px;
+  opacity: 0.8;
+  transition: transform 0.2s ease-out;
+}
+
+.left-img {
+  left: 5%;
+  transform: translateY(-50%);
+}
+
+.right-img {
+  right: 5%;
+  transform: translateY(-50%);
+}
+
+.hero-title-box {
+  z-index: 2;
+  background: rgba(255, 255, 255, 0.8);
+  padding: 40px 60px;
+  border-radius: 20px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.05);
+  backdrop-filter: blur(10px);
+}
+
+.hero-title {
+  font-family: "Oswald", sans-serif;
+  font-size: 5rem;
+  font-weight: 900;
+  color: #003CFF;
+  letter-spacing: 2px;
+}
+
+.hero-title span {
+  color: #028477;
+}
+
+.hero-subtitle {
+  font-size: 1.2rem;
+  margin: 15px 0 25px;
+  color: #444;
+}
+
+.hero-btn {
+  background-color: #028477;
+  border: none;
+  color: white;
+  padding: 12px 28px;
+  border-radius: 50px;
+  font-weight: 600;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+.hero-btn:hover {
+  background-color: #003CFF;
+  transform: translateY(-3px);
+}
+
+/* --- Why HySkill Section --- */
+.why-section {
+  padding: 100px 20px;
+  text-align: center;
+  background-color: #f9fbff;
+}
+
+.why-section h2 {
+  font-family: "Oswald", sans-serif;
+  font-size: 3rem;
+  color: #003CFF;
+  margin-bottom: 50px;
+}
+
+.why-section h2 span {
+  color: #028477;
+}
+
+.why-content {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.why-content p {
+  font-size: 1.1rem;
+  color: #333;
+  line-height: 1.7;
+  margin-bottom: 40px;
+}
+
+.why-points {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 30px;
+}
+
+.why-card {
+  background: white;
+  border-radius: 16px;
+  padding: 25px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+}
+
+.why-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 35px rgba(0, 60, 255, 0.1);
+}
+
+.why-card h4 {
+  color: #028477;
+  font-weight: 700;
+  margin-bottom: 10px;
+  font-family: "Oswald", sans-serif;
+}
+
+.why-card p {
+  font-size: 0.95rem;
+  color: #444;
+}
+
+@media (max-width: 768px) {
+  .hero-title {
+    font-size: 3.5rem;
+  }
+
+  .hero-img {
+    width: 250px;
+  }
+
+  .hero-title-box {
+    padding: 25px 30px;
+  }
+
+  .why-section h2 {
+    font-size: 2.2rem;
+  }
+}

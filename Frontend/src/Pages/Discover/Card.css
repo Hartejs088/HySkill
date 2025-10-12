@@ -1,0 +1,109 @@
+/* Card container */
+.profile-card {
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 100%;
+  max-width: 280px;
+  text-align: center;
+  transition: transform 0.2s, box-shadow 0.2s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px;
+}
+
+.profile-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Profile image */
+.profile-image {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 15px;
+}
+
+/* Name and rating */
+.profile-name {
+  font-family: 'Oswald', sans-serif;
+  font-weight: 700;
+  font-size: 1.2rem;
+  color: #028477;
+  margin-bottom: 5px;
+}
+
+.profile-rating {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+/* Bio */
+.profile-bio {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.85rem;
+  color: #666;
+  margin-bottom: 15px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  width: 100%;
+}
+
+/* Button */
+.profile-btn {
+  background-color: #028477;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 8px 15px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  cursor: pointer;
+  margin-bottom: 15px;
+  width: 100%;
+  transition: background 0.2s;
+}
+
+.profile-btn:hover {
+  background-color: #026b5c;
+}
+
+/* Skills */
+.profile-skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  justify-content: center;
+}
+
+.skill-badge {
+  background-color: #f1f1f1;
+  padding: 4px 8px;
+  border-radius: 6px;
+  font-size: 0.75rem;
+  color: #028477;
+  font-weight: 500;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .profile-card {
+    max-width: 45%;
+  }
+}
+
+@media (max-width: 480px) {
+  .profile-card {
+    max-width: 90%;
+  }
+  .profile-bio {
+    white-space: normal;
+  }
+}

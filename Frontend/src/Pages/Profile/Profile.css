@@ -1,0 +1,226 @@
+/* ProfilePage.css — Light Theme */
+
+.left-div {
+  display: flex;
+}
+
+/* Profile Container */
+.profile-container {
+  font-family: "Montserrat", sans-serif;
+  color: #ffffff;
+  padding: 20px;
+  padding-top: 100px;
+  background-color: #f9f9f9;
+  border-radius: 12px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Profile Layout */
+.profile-box {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 1rem;
+  justify-content: space-between;
+}
+
+/* Profile Photo */
+.profile-photo img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 3px solid #3bb4a1;
+  box-shadow: 0 0 10px rgba(59, 180, 161, 0.3);
+}
+
+/* Profile Name */
+.profile-name {
+  font-size: 2rem !important;
+  margin-top: 10px;
+  color: #013e38;
+}
+
+/* Rating Section */
+.rating {
+  margin-top: 10px;
+}
+
+.rating-stars {
+  font-size: 24px;
+  color: #f5a623;
+}
+
+.rating-value {
+  margin-left: 5px;
+  color: #555;
+}
+
+/* Buttons */
+.buttons {
+  margin-top: 10px;
+}
+
+.connect-button {
+  padding: 10px 20px;
+  margin-top: 1rem;
+  margin-bottom: 3rem;
+  margin-left: 2rem;
+  border: none;
+  border-radius: 5px;
+  background-color: #3bb4a1;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+
+.connect-button:hover {
+  background-color: #2a8e7f;
+}
+
+/* Report Button */
+.report-button {
+  padding: 10px 20px;
+  margin-top: 1rem;
+  margin-bottom: 3rem;
+  margin-left: 2rem;
+  border: none;
+  border-radius: 5px;
+  background-color: #f56664;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+
+.report-button:hover {
+  background-color: #d94b4a;
+}
+
+/* Edit Section */
+.edit-links {
+  display: flex;
+  margin-top: 1rem;
+  flex-direction: column;
+}
+
+.edit-button {
+  padding: 10px 20px;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  border: none;
+  border-radius: 5px;
+  background-color: #013e38;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+
+.edit-button:hover {
+  background-color: #02695e;
+}
+
+/* Section Headings */
+h2 {
+  color: #3bb4a1 !important;
+  border-bottom: 2px solid #3bb4a1;
+  display: inline-block;
+  padding-bottom: 4px;
+}
+
+/* Bio Section */
+.bio {
+  margin-bottom: 3rem;
+  font-size: 1.1rem;
+  color: #333;
+}
+
+/* Portfolio Links */
+.portfolio-links {
+  margin-top: 1rem;
+  display: flex;
+  margin-bottom: 3rem;
+  min-width: 15rem;
+  justify-content: space-between;
+}
+
+.link {
+  width: 50px;
+}
+
+.portfolio-link {
+  opacity: 0.8;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.portfolio-link:hover {
+  opacity: 1;
+}
+
+/* Skills */
+.skill-boxes {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 1rem;
+  margin-bottom: 4rem;
+}
+
+.skill-box {
+  background-color: #3bb4a1;
+  color: white;
+  padding: 5px 10px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  box-shadow: 0 2px 6px rgba(59, 180, 161, 0.3);
+}
+
+/* Education & Projects */
+.education-boxes,
+.project-boxes {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 1rem;
+  margin-bottom: 3rem;
+}
+
+.project-boxes {
+  margin-bottom: 4rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .left-div {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .edit-button {
+    display: flex;
+    align-self: center;
+  }
+
+  .profile-box,
+  .profile-photo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .connect-button,
+  .rating,
+  .profile-name {
+    margin-left: 0px !important;
+  }
+
+  .report-button,
+  .connect-button {
+    padding: 8px 14px;
+  }
+
+  .misc {
+    display: flex;
+    margin: auto;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
