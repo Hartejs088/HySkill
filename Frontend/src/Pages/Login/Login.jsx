@@ -6,7 +6,7 @@ const Login = () => {
   const [isHovered, setIsHovered] = useState(false);
 
   const handleGoogleLogin = () => {
-    window.location.href = "http://localhost:8000/auth/google";
+    window.location.href = "https://hyskill-1.onrender.com/auth/google";
   };
 
   return (
