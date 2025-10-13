@@ -6,8 +6,9 @@ const Login = () => {
   const [isHovered, setIsHovered] = useState(false);
 
   const handleGoogleLogin = () => {
-    window.location.href = "https://hyskill-1.onrender.com/auth/google";
-  };
+  const backendURL = import.meta.env.VITE_LOCALHOST;
+  window.location.href = `${backendURL}/auth/google`;
+};
 
   return (
     <div className="login-container">

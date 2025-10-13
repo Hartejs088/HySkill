@@ -7,7 +7,7 @@ const app = express();
 
 app.use(
   cors({
-    origin: "http://localhost:5173",
+    origin: "https://hy-skill.vercel.app",
     credentials: true,
   })
 );
