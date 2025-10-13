@@ -15,7 +15,7 @@ passport.use(
     {
       clientID: process.env.GOOGLE_CLIENT_ID,
       clientSecret: process.env.GOOGLE_CLIENT_SECRET,
-      callbackURL: "https://hy-skill.vercel.app/auth/google/callback",
+      callbackURL: "https://hyskill-1.onrender.com/auth/google/callback",
     },
     async (accessToken, refreshToken, profile, done) => {
       done(null, profile);
