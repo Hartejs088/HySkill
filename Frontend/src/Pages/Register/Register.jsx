@@ -88,17 +88,31 @@ const Register = () => {
           bio: data?.data?.bio,
           projects: proj ? proj : prevState.projects,
         }));
-      } catch (error) {
-        console.log(error);
-        if (error?.response?.data?.message) {
-          toast.error(error.response.data.message);
-          navigate("/login");
-        } else {
-          toast.error("Some error occurred");
-        }
-      } finally {
-        setLoading(false);
-      }
+} catch (error) {
+  console.error("GET USER ERROR:", error);
+
+  if (error.response) {
+    console.error("Status:", error.response.status);
+    console.error("Data:", error.response.data);
+    console.error("Headers:", error.response.headers);
+
+    toast.error(
+      error.response.data?.message || "Server error occurred"
+    );
+
+    if (error.response.status === 401) {
+      navigate("/login");
+    }
+  } else if (error.request) {
+    console.error("No response received:", error.request);
+    toast.error("Backend server is not responding");
+  } else {
+    console.error("Request setup error:", error.message);
+    toast.error(error.message);
+  }
+} finally {
+  setLoading(false);
+}
     };
     getUser();
   }, []);
